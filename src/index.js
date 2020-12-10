@@ -9,7 +9,5 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', RouteNavigator);
 
 const server = app.listen(8080, () => {
-  const port = server.address().port;
-
-  console.log(`You're connected at ${port}`);
+  console.log(`You're connected`);
 });
